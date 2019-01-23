@@ -32,6 +32,9 @@ import android.widget.TextView;
 
 import com.okta.appauth.android.OktaAppAuth;
 import com.okta.appauth.android.OktaAppAuth.LoginHintChangeHandler;
+import com.okta.auth.OktaAuth;
+import com.okta.auth.OktaAuthProvider;
+
 import net.openid.appauth.AuthorizationException;
 
 /**

@@ -36,6 +36,10 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 
@@ -55,10 +59,9 @@ apply plugin: "com.github.dcendents.android-maven"
 dependencies {
     //used as a provider of manifest for app-auth
     //should be removed when singout functionality is merged
-    implementation project(":appauthlibrary")
+    implementation project(':appauthlibrary')
     implementation "com.squareup.okio:okio:${rootProject.okioVersion}"
     implementation "com.android.support:customtabs:${rootProject.browserVersion}"
-
     testImplementation "junit:junit:${rootProject.junitVersion}"
     testImplementation "org.mockito:mockito-core:${rootProject.mockitoVersion}"
     testImplementation "org.robolectric:robolectric:${rootProject.robolectricVersion}"
